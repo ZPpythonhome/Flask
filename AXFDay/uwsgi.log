@@ -1,0 +1,757 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jun  1 11:31:25 2018] ***
+compiled with version: 5.4.0 20160609 on 27 April 2018 00:38:55
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: Rock
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/rock/Python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/Python1804/bin/uwsgi
+chdir() to /home/rock/Python1804/AXFDay
+your processes number limit is 19513
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8010).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jun  1 11:35:57 2018] ***
+compiled with version: 5.4.0 20160609 on 27 April 2018 00:38:55
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: Rock
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/rock/Python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/Python1804/bin/uwsgi
+chdir() to /home/rock/Python1804/AXFDay
+your processes number limit is 19513
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8010 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36701 (port auto-assigned) fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1d78ee0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 312672 bytes (305 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1d78ee0 pid: 12358 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12358)
+spawned uWSGI worker 1 (pid: 12363, cores: 4)
+spawned uWSGI worker 2 (pid: 12364, cores: 4)
+spawned uWSGI http 1 (pid: 12368)
+[pid: 12364|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 802 bytes} [Fri Jun  1 11:37:17 2018] GET /axf/home/ => generated 22316 bytes in 210 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 12364|app: 0|req: 3/2] 127.0.0.1 () {38 vars in 769 bytes} [Fri Jun  1 11:37:17 2018] GET /static/css/reset.css => generated 94 bytes in 39 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12364|app: 0|req: 3/3] 127.0.0.1 () {38 vars in 785 bytes} [Fri Jun  1 11:37:17 2018] GET /static/axf/main/css/main.css => generated 102 bytes in 40 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 2)
+[pid: 12364|app: 0|req: 4/4] 127.0.0.1 () {38 vars in 752 bytes} [Fri Jun  1 11:37:17 2018] GET /static/js/jquery.js => generated 93 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12363|app: 0|req: 3/5] 127.0.0.1 () {38 vars in 785 bytes} [Fri Jun  1 11:37:17 2018] GET /static/axf/home/css/home.css => generated 102 bytes in 231 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 3)
+[pid: 12363|app: 0|req: 3/6] 127.0.0.1 () {38 vars in 771 bytes} [Fri Jun  1 11:37:17 2018] GET /static/css/swiper.css => generated 95 bytes in 240 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 12363|app: 0|req: 3/7] 127.0.0.1 () {38 vars in 777 bytes} [Fri Jun  1 11:37:17 2018] GET /static/css/bootstrap.css => generated 98 bytes in 254 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12364|app: 0|req: 5/8] 127.0.0.1 () {38 vars in 766 bytes} [Fri Jun  1 11:37:17 2018] GET /static/js/swiper.jquery.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 12364|app: 0|req: 7/10] 127.0.0.1 () {38 vars in 766 bytes} [Fri Jun  1 11:37:17 2018] GET /static/axf/home/js/home.js => generated 100 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 12363|app: 0|req: 4/10] 127.0.0.1 () {38 vars in 758 bytes} [Fri Jun  1 11:37:17 2018] GET /static/js/bootstrap.js => generated 96 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12364|app: 0|req: 7/11] 127.0.0.1 () {38 vars in 748 bytes} [Fri Jun  1 11:37:17 2018] GET /static/js/base.js => generated 91 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12364|app: 0|req: 8/12] 127.0.0.1 () {38 vars in 766 bytes} [Fri Jun  1 11:37:17 2018] GET /static/js/swiper.jquery.js => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 2)
+[pid: 12363|app: 0|req: 5/13] 127.0.0.1 () {38 vars in 748 bytes} [Fri Jun  1 11:37:17 2018] GET /static/js/base.js => generated 91 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12363|app: 0|req: 6/14] 127.0.0.1 () {38 vars in 766 bytes} [Fri Jun  1 11:37:17 2018] GET /static/axf/home/js/home.js => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 3)
+[pid: 12363|app: 0|req: 7/15] 127.0.0.1 () {38 vars in 772 bytes} [Fri Jun  1 11:37:18 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+Fri Jun  1 11:43:39 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 11:43:39 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 11:43:39 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 11:43:39 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 11:43:39 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 11:43:39 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jun  1 11:43:45 2018] ***
+compiled with version: 5.4.0 20160609 on 27 April 2018 00:38:55
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: Rock
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/rock/Python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/Python1804/bin/uwsgi
+chdir() to /home/rock/Python1804/AXFDay
+your processes number limit is 19513
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8010 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1b24de0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 312672 bytes (305 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1b24de0 pid: 12792 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12792)
+spawned uWSGI worker 1 (pid: 12797, cores: 4)
+spawned uWSGI worker 2 (pid: 12798, cores: 4)
+[pid: 12798|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 887 bytes} [Fri Jun  1 11:43:55 2018] GET /axf/home/ => generated 22316 bytes in 108 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 1/2] 10.0.119.100 () {42 vars in 712 bytes} [Fri Jun  1 11:43:56 2018] GET /axf/home => generated 0 bytes in 17 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 2/3] 10.0.119.100 () {42 vars in 714 bytes} [Fri Jun  1 11:43:56 2018] GET /axf/home/ => generated 22316 bytes in 255 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 3/4] 127.0.0.1 () {44 vars in 917 bytes} [Fri Jun  1 11:44:00 2018] GET /axf/home/ => generated 22316 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 4/5] 127.0.0.1 () {44 vars in 932 bytes} [Fri Jun  1 11:44:06 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 974 bytes} [Fri Jun  1 11:44:06 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 5/7] 127.0.0.1 () {44 vars in 951 bytes} [Fri Jun  1 11:44:08 2018] GET /axf/cart/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 151 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 6/8] 127.0.0.1 () {44 vars in 961 bytes} [Fri Jun  1 11:44:08 2018] GET /axf/userlogin/ => generated 2044 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 3/9] 127.0.0.1 () {44 vars in 951 bytes} [Fri Jun  1 11:44:11 2018] GET /axf/mine/ => generated 5948 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 4/10] 127.0.0.1 () {44 vars in 964 bytes} [Fri Jun  1 11:44:13 2018] GET /axf/home/ => generated 22316 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 5/11] 10.0.119.155 () {40 vars in 677 bytes} [Fri Jun  1 11:44:36 2018] GET /axf/home => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 6/12] 10.0.119.155 () {40 vars in 679 bytes} [Fri Jun  1 11:44:36 2018] GET /axf/home/ => generated 22316 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 7/13] 10.0.119.155 () {42 vars in 740 bytes} [Fri Jun  1 11:44:45 2018] GET /axf/home/ => generated 22316 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 7/14] 10.0.119.155 () {42 vars in 758 bytes} [Fri Jun  1 11:44:48 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 8/15] 10.0.119.155 () {42 vars in 800 bytes} [Fri Jun  1 11:44:48 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 8/16] 10.0.119.155 () {42 vars in 777 bytes} [Fri Jun  1 11:44:50 2018] GET /axf/cart/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 151 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 9/17] 10.0.119.155 () {42 vars in 787 bytes} [Fri Jun  1 11:44:50 2018] GET /axf/userlogin/ => generated 2044 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 9/18] 10.0.119.100 () {42 vars in 740 bytes} [Fri Jun  1 11:44:50 2018] GET /axf/home/ => generated 22316 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 10/19] 10.0.119.100 () {42 vars in 754 bytes} [Fri Jun  1 11:44:52 2018] GET /axf/cart/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 151 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 10/20] 10.0.119.100 () {42 vars in 764 bytes} [Fri Jun  1 11:44:52 2018] GET /axf/userlogin/ => generated 2044 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 11/21] 10.0.119.100 () {44 vars in 843 bytes} [Fri Jun  1 11:44:54 2018] GET /axf/mine/ => generated 5948 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 12/22] 10.0.119.155 () {44 vars in 866 bytes} [Fri Jun  1 11:44:55 2018] GET /axf/mine/ => generated 5948 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 13/23] 10.0.119.100 () {44 vars in 859 bytes} [Fri Jun  1 11:44:56 2018] GET /axf/userregister/ => generated 2793 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 11/24] 10.0.119.155 () {44 vars in 859 bytes} [Fri Jun  1 11:44:57 2018] GET /axf/userregister/ => generated 2793 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 14/25] 10.0.119.100 () {44 vars in 849 bytes} [Fri Jun  1 11:44:59 2018] GET /axf/checkuser/?u_name=qwer => generated 35 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 15/26] 10.0.119.210 () {42 vars in 777 bytes} [Fri Jun  1 11:45:04 2018] GET /axf/home/ => generated 22316 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 16/27] 10.0.119.238 () {44 vars in 768 bytes} [Fri Jun  1 11:45:04 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 17/28] 10.0.119.238 () {44 vars in 731 bytes} [Fri Jun  1 11:45:04 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 18/29] 10.0.119.100 () {44 vars in 883 bytes} [Fri Jun  1 11:45:09 2018] GET /axf/checkemail/?u_email=dongUUUUU%40163.com => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 19/30] 10.0.119.238 () {44 vars in 802 bytes} [Fri Jun  1 11:45:14 2018] GET /app/getjokelist2/ => generated 91 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 20/31] 10.0.119.238 () {44 vars in 786 bytes} [Fri Jun  1 11:45:21 2018] GET /axf/home/ => generated 22316 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 21/32] 10.0.119.210 () {44 vars in 829 bytes} [Fri Jun  1 11:45:34 2018] GET /axf/home/ => generated 22316 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+e10adc3949ba59abbe56e057f20f883e
+[pid: 12797|app: 0|req: 23/33] 10.0.119.238 () {46 vars in 835 bytes} [Fri Jun  1 11:45:38 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 24/34] 10.0.119.238 () {46 vars in 877 bytes} [Fri Jun  1 11:45:38 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 25/35] 10.0.119.238 () {46 vars in 854 bytes} [Fri Jun  1 11:45:41 2018] GET /axf/cart/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 5 headers in 151 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 26/36] 10.0.119.238 () {46 vars in 864 bytes} [Fri Jun  1 11:45:41 2018] GET /axf/userlogin/ => generated 2044 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 26/37] 10.0.119.100 () {52 vars in 1123 bytes} [Fri Jun  1 11:45:35 2018] POST /axf/userregister/ => generated 0 bytes in 9616 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 12/38] 10.0.119.100 () {46 vars in 926 bytes} [Fri Jun  1 11:45:45 2018] GET /axf/mine/ => generated 5948 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 13/39] 10.0.119.238 () {46 vars in 854 bytes} [Fri Jun  1 11:45:46 2018] GET /axf/mine/ => generated 5948 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 14/40] 10.0.119.100 () {46 vars in 926 bytes} [Fri Jun  1 11:45:48 2018] GET /axf/mine/ => generated 5948 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 15/41] 10.0.119.100 () {44 vars in 887 bytes} [Fri Jun  1 11:45:50 2018] GET /axf/cart/ => generated 3848 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 16/42] 10.0.119.100 () {44 vars in 891 bytes} [Fri Jun  1 11:45:51 2018] GET /axf/market/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 27/43] 10.0.119.100 () {44 vars in 933 bytes} [Fri Jun  1 11:45:51 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+495
+[pid: 12797|app: 0|req: 28/44] 10.0.119.100 () {44 vars in 908 bytes} [Fri Jun  1 11:45:52 2018] GET /axf/addtocart/?goodsid=495 => generated 46 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 29/45] 10.0.119.100 () {44 vars in 910 bytes} [Fri Jun  1 11:45:53 2018] GET /axf/cart/ => generated 4958 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+['1']
+[pid: 12798|app: 0|req: 17/46] 10.0.119.100 () {44 vars in 877 bytes} [Fri Jun  1 11:45:54 2018] GET /axf/makeorder/?carts=1 => generated 44 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 30/47] 10.0.119.100 () {44 vars in 922 bytes} [Fri Jun  1 11:45:54 2018] GET /axf/orderdetail/?order_id=9 => generated 1891 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 18/48] 10.0.119.100 () {44 vars in 887 bytes} [Fri Jun  1 11:45:59 2018] GET /axf/cart/ => generated 3848 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 19/49] 10.0.119.100 () {44 vars in 891 bytes} [Fri Jun  1 11:46:00 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 20/50] 10.0.119.100 () {44 vars in 933 bytes} [Fri Jun  1 11:46:00 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+495
+[pid: 12798|app: 0|req: 21/51] 10.0.119.100 () {44 vars in 908 bytes} [Fri Jun  1 11:46:01 2018] GET /axf/addtocart/?goodsid=495 => generated 46 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 31/52] 10.0.119.100 () {44 vars in 910 bytes} [Fri Jun  1 11:46:02 2018] GET /axf/cart/ => generated 4958 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+['2']
+[pid: 12797|app: 0|req: 32/53] 10.0.119.100 () {44 vars in 877 bytes} [Fri Jun  1 11:46:04 2018] GET /axf/makeorder/?carts=2 => generated 45 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 22/54] 10.0.119.100 () {44 vars in 924 bytes} [Fri Jun  1 11:46:04 2018] GET /axf/orderdetail/?order_id=10 => generated 1893 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 33/55] 10.0.119.100 () {44 vars in 896 bytes} [Fri Jun  1 11:46:04 2018] GET /axf/alipay/?orderid=10 => generated 30 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 34/56] 10.0.119.100 () {44 vars in 906 bytes} [Fri Jun  1 11:46:04 2018] GET /axf/mine/ => generated 5950 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 23/57] 10.0.119.100 () {44 vars in 914 bytes} [Fri Jun  1 11:46:06 2018] GET /axf/orderlist/?status=0 => generated 2073 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 24/58] 10.0.119.207 () {42 vars in 745 bytes} [Fri Jun  1 12:00:44 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 25/59] 10.0.127.246 () {38 vars in 565 bytes} [Fri Jun  1 15:25:13 2018] GET /favicon.ico => generated 85 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 26/60] 10.0.127.172 () {40 vars in 732 bytes} [Fri Jun  1 15:39:59 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 35/61] 10.0.127.246 () {38 vars in 565 bytes} [Fri Jun  1 15:43:21 2018] GET /favicon.ico => generated 85 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 36/62] 10.0.119.247 () {42 vars in 746 bytes} [Fri Jun  1 16:24:55 2018] GET /favicon.ico => generated 85 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 37/63] 10.0.119.138 () {40 vars in 643 bytes} [Fri Jun  1 16:50:59 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 27/64] 10.0.119.231 () {42 vars in 751 bytes} [Fri Jun  1 16:54:29 2018] GET /favicon.ico => generated 85 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 28/65] 127.0.0.1 () {42 vars in 900 bytes} [Fri Jun  1 17:02:35 2018] GET /axf/home/ => generated 22316 bytes in 66 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 38/66] 127.0.0.1 () {42 vars in 865 bytes} [Fri Jun  1 17:02:40 2018] GET /favicon.ico => generated 85 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 29/67] 10.0.119.211 () {42 vars in 785 bytes} [Fri Jun  1 17:02:48 2018] GET /axf/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 39/68] 10.0.119.211 () {42 vars in 787 bytes} [Fri Jun  1 17:02:48 2018] GET /axf/home/ => generated 22316 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 30/69] 10.0.119.211 () {42 vars in 755 bytes} [Fri Jun  1 17:02:49 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 40/70] 127.0.0.1 () {44 vars in 931 bytes} [Fri Jun  1 17:02:51 2018] GET /axf/home/ => generated 22316 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 31/71] 10.0.119.211 () {44 vars in 832 bytes} [Fri Jun  1 17:02:52 2018] GET /axf/mine/ => generated 5948 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 41/72] 10.0.119.211 () {44 vars in 848 bytes} [Fri Jun  1 17:02:53 2018] GET /axf/userregister/ => generated 2793 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 42/73] 127.0.0.1 () {44 vars in 946 bytes} [Fri Jun  1 17:02:54 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 43/74] 127.0.0.1 () {44 vars in 988 bytes} [Fri Jun  1 17:02:54 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 32/75] 127.0.0.1 () {44 vars in 965 bytes} [Fri Jun  1 17:02:56 2018] GET /axf/cart/ => generated 0 bytes in 12 msecs (HTTP/1.1 302) 5 headers in 222 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 33/76] 127.0.0.1 () {44 vars in 931 bytes} [Fri Jun  1 17:02:56 2018] GET /axf/userlogin/ => generated 2044 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 44/77] 10.0.114.222 () {40 vars in 620 bytes} [Fri Jun  1 17:02:56 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 45/78] 10.0.119.211 () {44 vars in 836 bytes} [Fri Jun  1 17:02:58 2018] GET /axf/checkuser/?u_name=555 => generated 35 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 46/79] 127.0.0.1 () {44 vars in 921 bytes} [Fri Jun  1 17:02:59 2018] GET /axf/mine/ => generated 5948 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 47/80] 127.0.0.1 () {44 vars in 914 bytes} [Fri Jun  1 17:03:02 2018] GET /axf/userregister/ => generated 2793 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 48/81] 10.0.119.211 () {44 vars in 860 bytes} [Fri Jun  1 17:03:05 2018] GET /axf/checkemail/?u_email=555%40163.com => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 49/82] 127.0.0.1 () {44 vars in 904 bytes} [Fri Jun  1 17:03:06 2018] GET /axf/checkuser/?u_name=Rock => generated 42 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 50/83] 127.0.0.1 () {44 vars in 912 bytes} [Fri Jun  1 17:03:14 2018] GET /axf/checkuser/?u_name=Rock1204 => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 2)
+15de21c670ae7c3f6f3f1f37029303c9
+[pid: 12797|app: 0|req: 51/84] 10.0.119.211 () {52 vars in 1112 bytes} [Fri Jun  1 17:03:17 2018] POST /axf/userregister/ => generated 0 bytes in 224 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 52/85] 10.0.119.211 () {46 vars in 915 bytes} [Fri Jun  1 17:03:17 2018] GET /axf/mine/ => generated 5919 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 34/86] 10.0.119.211 () {44 vars in 880 bytes} [Fri Jun  1 17:03:39 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 35/87] 10.0.119.211 () {44 vars in 922 bytes} [Fri Jun  1 17:03:39 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+495
+[pid: 12797|app: 0|req: 53/88] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:03:42 2018] GET /axf/addtocart/?goodsid=495 => generated 46 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 54/89] 10.0.119.112 () {40 vars in 677 bytes} [Fri Jun  1 17:03:43 2018] GET /axf/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 55/90] 10.0.119.112 () {40 vars in 679 bytes} [Fri Jun  1 17:03:43 2018] GET /axf/home/ => generated 22316 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 36/91] 10.0.119.112 () {40 vars in 647 bytes} [Fri Jun  1 17:03:44 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+496
+[pid: 12798|app: 0|req: 37/92] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:03:47 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+497
+[pid: 12798|app: 0|req: 38/93] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:03:49 2018] GET /axf/addtocart/?goodsid=497 => generated 46 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 39/94] 10.0.119.211 () {44 vars in 899 bytes} [Fri Jun  1 17:03:49 2018] GET /axf/cart/ => generated 7229 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+['3', '4', '5']
+[pid: 12798|app: 0|req: 40/95] 10.0.119.211 () {44 vars in 882 bytes} [Fri Jun  1 17:03:54 2018] GET /axf/makeorder/?carts=3%234%235 => generated 45 bytes in 73 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+[pid: 12798|app: 0|req: 41/96] 10.0.119.211 () {44 vars in 913 bytes} [Fri Jun  1 17:03:54 2018] GET /axf/orderdetail/?order_id=11 => generated 3160 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 42/97] 10.0.119.112 () {44 vars in 764 bytes} [Fri Jun  1 17:03:55 2018] GET /axf/home/ => generated 22316 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 56/98] 10.0.119.211 () {44 vars in 885 bytes} [Fri Jun  1 17:03:57 2018] GET /axf/alipay/?orderid=11 => generated 30 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 57/99] 10.0.119.211 () {44 vars in 895 bytes} [Fri Jun  1 17:03:57 2018] GET /axf/mine/ => generated 5920 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 58/100] 10.0.119.112 () {42 vars in 756 bytes} [Fri Jun  1 17:04:01 2018] GET /axf/mine/ => generated 5948 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 59/101] 10.0.119.211 () {44 vars in 903 bytes} [Fri Jun  1 17:04:05 2018] GET /axf/orderlist/?status=0 => generated 917 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 60/102] 10.0.119.211 () {44 vars in 880 bytes} [Fri Jun  1 17:04:08 2018] GET /axf/market/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 61/103] 10.0.119.211 () {44 vars in 922 bytes} [Fri Jun  1 17:04:08 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+495
+[pid: 12797|app: 0|req: 62/104] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:04:09 2018] GET /axf/addtocart/?goodsid=495 => generated 46 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 43/105] 10.0.119.211 () {44 vars in 899 bytes} [Fri Jun  1 17:04:12 2018] GET /axf/cart/ => generated 4958 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12798|app: 0|req: 44/106] 10.0.119.211 () {44 vars in 876 bytes} [Fri Jun  1 17:04:14 2018] GET /axf/mine/ => generated 5920 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 12798|app: 0|req: 45/107] 10.0.119.211 () {46 vars in 907 bytes} [Fri Jun  1 17:04:16 2018] GET /axf/mine/ => generated 5920 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 12797|app: 0|req: 63/108] 10.0.119.211 () {44 vars in 903 bytes} [Fri Jun  1 17:04:18 2018] GET /axf/orderlist/?status=0 => generated 917 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 64/109] 10.0.119.211 () {44 vars in 880 bytes} [Fri Jun  1 17:04:21 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 65/110] 10.0.119.211 () {44 vars in 922 bytes} [Fri Jun  1 17:04:21 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+496
+[pid: 12798|app: 0|req: 46/111] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:04:22 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+496
+[pid: 12797|app: 0|req: 66/112] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:04:22 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 2)
+496
+[pid: 12797|app: 0|req: 67/113] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:04:22 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+496
+[pid: 12798|app: 0|req: 47/114] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:04:23 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+496
+[pid: 12797|app: 0|req: 68/115] 10.0.119.211 () {44 vars in 897 bytes} [Fri Jun  1 17:04:23 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 12797|app: 0|req: 69/116] 10.0.119.211 () {44 vars in 899 bytes} [Fri Jun  1 17:04:23 2018] GET /axf/cart/ => generated 6109 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+['6', '7']
+[pid: 12798|app: 0|req: 48/117] 10.0.119.211 () {44 vars in 874 bytes} [Fri Jun  1 17:04:26 2018] GET /axf/makeorder/?carts=6%237 => generated 45 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 12798|app: 0|req: 49/118] 10.0.119.211 () {44 vars in 913 bytes} [Fri Jun  1 17:04:26 2018] GET /axf/orderdetail/?order_id=12 => generated 2534 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 70/119] 10.0.119.211 () {44 vars in 876 bytes} [Fri Jun  1 17:04:29 2018] GET /axf/mine/ => generated 5921 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 12797|app: 0|req: 71/120] 10.0.119.211 () {44 vars in 903 bytes} [Fri Jun  1 17:04:30 2018] GET /axf/orderlist/?status=0 => generated 2872 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 12797|app: 0|req: 72/121] 10.0.119.211 () {44 vars in 927 bytes} [Fri Jun  1 17:04:32 2018] GET /axf/orderdetail/?order_id=12 => generated 2534 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+Fri Jun  1 17:05:53 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 17:05:53 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 17:05:53 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 17:05:53 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 17:05:53 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Jun  1 17:05:53 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Fri Jun  1 17:08:55 2018] ***
+compiled with version: 5.4.0 20160609 on 27 April 2018 00:38:55
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: Rock
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/rock/Python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/Python1804/bin/uwsgi
+chdir() to /home/rock/Python1804/AXFDay
+your processes number limit is 19513
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8010 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xed2de0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 938720 bytes (916 KB) for 48 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xed2de0 pid: 29714 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29714)
+spawned uWSGI worker 1 (pid: 29720, cores: 12)
+spawned uWSGI worker 2 (pid: 29721, cores: 12)
+spawned uWSGI worker 3 (pid: 29726, cores: 12)
+spawned uWSGI worker 4 (pid: 29740, cores: 12)
+[pid: 29720|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 945 bytes} [Fri Jun  1 17:09:19 2018] GET /axf/userregister/ => generated 2793 bytes in 66 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 1/2] 127.0.0.1 () {44 vars in 904 bytes} [Fri Jun  1 17:09:24 2018] GET /axf/checkuser/?u_name=Rock => generated 42 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29740|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 912 bytes} [Fri Jun  1 17:09:27 2018] GET /axf/checkuser/?u_name=Rock1204 => generated 35 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 2/4] 10.0.119.211 () {46 vars in 907 bytes} [Fri Jun  1 17:09:28 2018] GET /axf/mine/ => generated 5921 bytes in 84 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 3/5] 10.0.119.211 () {44 vars in 876 bytes} [Fri Jun  1 17:09:30 2018] GET /axf/cart/ => generated 3848 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 4)
+[pid: 29726|app: 0|req: 1/6] 10.0.119.211 () {44 vars in 880 bytes} [Fri Jun  1 17:09:31 2018] GET /axf/market/ => generated 0 bytes in 22 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 2/7] 10.0.119.211 () {44 vars in 922 bytes} [Fri Jun  1 17:09:31 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 4/8] 10.0.119.211 () {44 vars in 899 bytes} [Fri Jun  1 17:09:32 2018] GET /axf/mine/ => generated 5921 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29740|app: 0|req: 2/9] 10.0.119.211 () {44 vars in 876 bytes} [Fri Jun  1 17:09:36 2018] GET /axf/home/ => generated 22316 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 7)
+[pid: 29740|app: 0|req: 3/10] 10.0.119.112 () {42 vars in 772 bytes} [Fri Jun  1 17:10:12 2018] GET /axf/userregister/ => generated 2793 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 3)
+[pid: 29720|app: 0|req: 5/11] 10.0.119.112 () {44 vars in 859 bytes} [Fri Jun  1 17:10:26 2018] GET /axf/checkuser/?u_name=laowang4 => generated 35 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29721|app: 0|req: 3/12] 10.0.119.112 () {44 vars in 859 bytes} [Fri Jun  1 17:10:29 2018] GET /axf/checkuser/?u_name=laowang5 => generated 35 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 4)
+[pid: 29721|app: 0|req: 4/13] 10.0.119.112 () {44 vars in 885 bytes} [Fri Jun  1 17:10:31 2018] GET /axf/checkemail/?u_email=1798981355%40qq.com => generated 35 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29721|app: 0|req: 5/14] 10.0.119.211 () {44 vars in 876 bytes} [Fri Jun  1 17:10:43 2018] GET /axf/mine/ => generated 5921 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 29720|app: 0|req: 6/15] 10.0.119.211 () {44 vars in 888 bytes} [Fri Jun  1 17:10:45 2018] GET /axf/userlogout/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 5 headers in 217 bytes (1 switches on core 8)
+[pid: 29740|app: 0|req: 4/16] 10.0.119.211 () {44 vars in 832 bytes} [Fri Jun  1 17:10:45 2018] GET /axf/mine/ => generated 5948 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29726|app: 0|req: 2/17] 127.0.0.1 () {44 vars in 952 bytes} [Fri Jun  1 17:10:48 2018] GET /axf/checkemail/?u_email=rongjiawei%401000phone.com => generated 35 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 7/18] 10.0.119.211 () {44 vars in 848 bytes} [Fri Jun  1 17:10:48 2018] GET /axf/userregister/ => generated 2793 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 7)
+324d1907d9ca6733d399b87affe48c74
+[pid: 29720|app: 0|req: 9/19] 10.0.119.211 () {44 vars in 836 bytes} [Fri Jun  1 17:10:52 2018] GET /axf/checkuser/?u_name=666 => generated 35 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 9/20] 10.0.119.112 () {52 vars in 1125 bytes} [Fri Jun  1 17:10:50 2018] POST /axf/userregister/ => generated 0 bytes in 6580 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 10)
+[pid: 29721|app: 0|req: 6/21] 10.0.119.112 () {46 vars in 928 bytes} [Fri Jun  1 17:10:56 2018] GET /axf/mine/ => generated 5927 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 9)
+[pid: 29726|app: 0|req: 3/22] 10.0.119.211 () {44 vars in 858 bytes} [Fri Jun  1 17:10:57 2018] GET /axf/checkemail/?u_email=666%4066.com => generated 35 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+a08052a51ebbecd8c35d883a67beec0b
+[pid: 29720|app: 0|req: 10/23] 127.0.0.1 () {52 vars in 1175 bytes} [Fri Jun  1 17:11:03 2018] POST /axf/userregister/ => generated 0 bytes in 248 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 9)
+[pid: 29721|app: 0|req: 7/24] 127.0.0.1 () {46 vars in 981 bytes} [Fri Jun  1 17:11:03 2018] GET /axf/mine/ => generated 5930 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 11)
+fae0b27c451c728867a567e8c1bb4e53
+[pid: 29740|app: 0|req: 5/25] 10.0.119.211 () {52 vars in 1112 bytes} [Fri Jun  1 17:11:12 2018] POST /axf/userregister/ => generated 0 bytes in 3714 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 6)
+[pid: 29720|app: 0|req: 11/26] 10.0.119.211 () {46 vars in 915 bytes} [Fri Jun  1 17:11:16 2018] GET /axf/mine/ => generated 5927 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 6)
+[pid: 29726|app: 0|req: 4/27] 10.0.119.211 () {44 vars in 888 bytes} [Fri Jun  1 17:11:30 2018] GET /axf/userlogout/ => generated 0 bytes in 22 msecs (HTTP/1.1 302) 5 headers in 217 bytes (1 switches on core 4)
+[pid: 29721|app: 0|req: 8/28] 10.0.119.211 () {44 vars in 832 bytes} [Fri Jun  1 17:11:30 2018] GET /axf/mine/ => generated 5948 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 8)
+[pid: 29726|app: 0|req: 5/29] 10.0.119.211 () {44 vars in 848 bytes} [Fri Jun  1 17:11:32 2018] GET /axf/userregister/ => generated 2793 bytes in 61 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 3)
+[pid: 29726|app: 0|req: 6/30] 10.0.119.211 () {44 vars in 836 bytes} [Fri Jun  1 17:11:35 2018] GET /axf/checkuser/?u_name=777 => generated 35 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 9)
+[pid: 29726|app: 0|req: 7/31] 10.0.119.211 () {44 vars in 858 bytes} [Fri Jun  1 17:11:42 2018] GET /axf/checkemail/?u_email=777%4016.com => generated 35 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29720|app: 0|req: 12/32] 10.0.119.252 () {40 vars in 592 bytes} [Fri Jun  1 17:11:46 2018] GET /axf/mine => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 29720|app: 0|req: 13/33] 10.0.119.252 () {40 vars in 594 bytes} [Fri Jun  1 17:11:46 2018] GET /axf/mine/ => generated 5948 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 14/34] 10.0.119.252 () {42 vars in 655 bytes} [Fri Jun  1 17:11:50 2018] GET /axf/userregister/ => generated 2793 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 4)
+[pid: 29726|app: 0|req: 8/35] 10.0.119.209 () {40 vars in 680 bytes} [Fri Jun  1 17:11:50 2018] GET /axf/home/ => generated 22316 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 15/36] 10.0.119.209 () {40 vars in 648 bytes} [Fri Jun  1 17:11:50 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29720|app: 0|req: 16/37] 127.0.0.1 () {44 vars in 942 bytes} [Fri Jun  1 17:11:51 2018] GET /axf/cart/ => generated 3848 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 17/38] 127.0.0.1 () {44 vars in 946 bytes} [Fri Jun  1 17:11:53 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 2)
+[pid: 29720|app: 0|req: 18/39] 127.0.0.1 () {44 vars in 988 bytes} [Fri Jun  1 17:11:53 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 8)
+f1c1592588411002af340cbaedd6fc33
+[pid: 29721|app: 0|req: 9/40] 10.0.119.183 () {40 vars in 683 bytes} [Fri Jun  1 17:11:54 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29720|app: 0|req: 19/41] 10.0.119.211 () {52 vars in 1112 bytes} [Fri Jun  1 17:11:54 2018] POST /axf/userregister/ => generated 0 bytes in 211 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 7)
+[pid: 29721|app: 0|req: 10/42] 10.0.119.211 () {46 vars in 915 bytes} [Fri Jun  1 17:11:54 2018] GET /axf/mine/ => generated 5927 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 10)
+[pid: 29721|app: 0|req: 11/43] 127.0.0.1 () {44 vars in 965 bytes} [Fri Jun  1 17:11:54 2018] GET /axf/home/ => generated 22316 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 6)
+[pid: 29721|app: 0|req: 12/44] 10.0.119.209 () {42 vars in 755 bytes} [Fri Jun  1 17:11:54 2018] GET /axf/mine/ => generated 5948 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29721|app: 0|req: 13/45] 10.0.119.252 () {46 vars in 821 bytes} [Fri Jun  1 17:11:55 2018] GET /axf/checkuser/?u_name=setsna => generated 35 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29726|app: 0|req: 9/46] 10.0.119.209 () {42 vars in 771 bytes} [Fri Jun  1 17:11:56 2018] GET /axf/userregister/ => generated 2793 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 14/47] 10.0.119.202 () {40 vars in 680 bytes} [Fri Jun  1 17:11:58 2018] GET /axf/mine => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 1)
+[pid: 29726|app: 0|req: 10/48] 10.0.119.202 () {40 vars in 682 bytes} [Fri Jun  1 17:11:58 2018] GET /axf/mine/ => generated 5948 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+[pid: 29726|app: 0|req: 11/49] 10.0.119.211 () {44 vars in 888 bytes} [Fri Jun  1 17:11:59 2018] GET /axf/userlogout/ => generated 0 bytes in 8 msecs (HTTP/1.1 302) 5 headers in 217 bytes (1 switches on core 1)
+[pid: 29726|app: 0|req: 12/50] 10.0.119.211 () {44 vars in 832 bytes} [Fri Jun  1 17:11:59 2018] GET /axf/mine/ => generated 5948 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 6)
+[pid: 29740|app: 0|req: 6/51] 10.0.119.202 () {40 vars in 650 bytes} [Fri Jun  1 17:12:00 2018] GET /favicon.ico => generated 85 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29720|app: 0|req: 20/52] 10.0.119.209 () {44 vars in 848 bytes} [Fri Jun  1 17:12:00 2018] GET /axf/checkuser/?u_name=ldh => generated 35 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 21/53] 10.0.119.252 () {46 vars in 849 bytes} [Fri Jun  1 17:12:00 2018] GET /axf/checkemail/?u_email=815568396%40qq.com => generated 35 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 9)
+[pid: 29720|app: 0|req: 22/54] 10.0.119.211 () {44 vars in 848 bytes} [Fri Jun  1 17:12:01 2018] GET /axf/userregister/ => generated 2793 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 6)
+[pid: 29720|app: 0|req: 23/55] 10.0.119.202 () {42 vars in 743 bytes} [Fri Jun  1 17:12:02 2018] GET /axf/userregister/ => generated 2793 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 29720|app: 0|req: 24/56] 10.0.119.183 () {40 vars in 707 bytes} [Fri Jun  1 17:12:03 2018] GET /axf/home => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 25/57] 10.0.119.183 () {40 vars in 709 bytes} [Fri Jun  1 17:12:03 2018] GET /axf/home/ => generated 22316 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 4)
+[pid: 29720|app: 0|req: 26/58] 10.0.119.240 () {42 vars in 770 bytes} [Fri Jun  1 17:12:04 2018] GET /axf/mine => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 3)
+[pid: 29720|app: 0|req: 27/59] 10.0.119.240 () {42 vars in 772 bytes} [Fri Jun  1 17:12:04 2018] GET /axf/mine/ => generated 5948 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 28/60] 10.0.119.211 () {44 vars in 836 bytes} [Fri Jun  1 17:12:04 2018] GET /axf/checkuser/?u_name=888 => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29740|app: 0|req: 7/61] 10.0.119.240 () {44 vars in 833 bytes} [Fri Jun  1 17:12:05 2018] GET /axf/userregister/ => generated 2793 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 8)
+[pid: 29740|app: 0|req: 8/62] 10.0.119.202 () {44 vars in 820 bytes} [Fri Jun  1 17:12:05 2018] GET /axf/checkuser/?u_name=WTF => generated 35 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29726|app: 0|req: 13/63] 10.0.119.155 () {42 vars in 766 bytes} [Fri Jun  1 17:12:06 2018] GET /axf/home => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 4)
+[pid: 29721|app: 0|req: 15/64] 10.0.119.155 () {42 vars in 768 bytes} [Fri Jun  1 17:12:06 2018] GET /axf/home/ => generated 22316 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 29726|app: 0|req: 14/65] 10.0.119.183 () {44 vars in 813 bytes} [Fri Jun  1 17:12:07 2018] GET /axf/mine/ => generated 5948 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 4)
+[pid: 29721|app: 0|req: 16/66] 10.0.119.202 () {44 vars in 854 bytes} [Fri Jun  1 17:12:07 2018] GET /axf/checkemail/?u_email=359742941%40qq.com => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29721|app: 0|req: 17/67] 10.0.119.155 () {42 vars in 736 bytes} [Fri Jun  1 17:12:09 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29721|app: 0|req: 18/68] 10.0.119.155 () {44 vars in 829 bytes} [Fri Jun  1 17:12:11 2018] GET /axf/home/ => generated 22316 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 9)
+[pid: 29721|app: 0|req: 19/69] 10.0.119.183 () {44 vars in 829 bytes} [Fri Jun  1 17:12:12 2018] GET /axf/userregister/ => generated 2793 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 11)
+[pid: 29740|app: 0|req: 9/70] 10.0.119.211 () {44 vars in 872 bytes} [Fri Jun  1 17:12:12 2018] GET /axf/checkemail/?u_email=1534238842%40qq.com => generated 35 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 4)
+[pid: 29740|app: 0|req: 10/71] 10.0.119.209 () {44 vars in 886 bytes} [Fri Jun  1 17:12:12 2018] GET /axf/checkemail/?u_email=wadonghang%40163.com => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29740|app: 0|req: 11/72] 10.0.119.155 () {44 vars in 843 bytes} [Fri Jun  1 17:12:13 2018] GET /axf/mine/ => generated 5948 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+698d51a19d8a121ce581499d7b701668
+[pid: 29740|app: 0|req: 13/73] 10.0.119.155 () {44 vars in 859 bytes} [Fri Jun  1 17:12:15 2018] GET /axf/userregister/ => generated 2793 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 3)
+[pid: 29721|app: 0|req: 20/74] 10.0.119.183 () {44 vars in 893 bytes} [Fri Jun  1 17:12:15 2018] GET /axf/checkuser/?u_name=asd => generated 35 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 8)
+[pid: 29740|app: 0|req: 13/75] 10.0.119.252 () {50 vars in 975 bytes} [Fri Jun  1 17:12:15 2018] POST /axf/userregister/ => generated 0 bytes in 795 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 7)
+[pid: 29726|app: 0|req: 15/76] 10.0.119.252 () {46 vars in 810 bytes} [Fri Jun  1 17:12:16 2018] GET /axf/mine/ => generated 5944 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 4)
+[pid: 29726|app: 0|req: 16/77] 10.0.119.240 () {44 vars in 941 bytes} [Fri Jun  1 17:12:17 2018] GET /axf/checkuser/?u_name=%E6%BA%9C%E9%87%91%E5%93%87%E5%BC%80%E5%91%80%E9%85%B7%E8%A3%82 => generated 35 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 8)
+[pid: 29720|app: 0|req: 29/78] 10.0.119.100 () {42 vars in 858 bytes} [Fri Jun  1 17:12:18 2018] GET /axf/userregister/ => generated 2793 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 8)
+e10adc3949ba59abbe56e057f20f883e
+[pid: 29726|app: 0|req: 17/79] 10.0.119.202 () {52 vars in 1096 bytes} [Fri Jun  1 17:12:19 2018] POST /axf/userregister/ => generated 0 bytes in 257 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 11)
+[pid: 29726|app: 0|req: 18/80] 10.0.119.202 () {46 vars in 899 bytes} [Fri Jun  1 17:12:19 2018] GET /axf/mine/ => generated 5917 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 29726|app: 0|req: 19/81] 10.0.119.100 () {42 vars in 818 bytes} [Fri Jun  1 17:12:19 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29726|app: 0|req: 20/82] 10.0.119.155 () {44 vars in 847 bytes} [Fri Jun  1 17:12:19 2018] GET /axf/checkuser/?u_name=plb => generated 35 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29720|app: 0|req: 30/83] 10.0.119.100 () {44 vars in 893 bytes} [Fri Jun  1 17:12:23 2018] GET /axf/checkuser/?u_name=dong => generated 35 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 31/84] 10.0.119.240 () {44 vars in 855 bytes} [Fri Jun  1 17:12:25 2018] GET /axf/checkemail/?u_email=824769122%40qq.com => generated 35 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 6)
+0a113ef6b61820daa5611c870ed8d5ee
+[pid: 29720|app: 0|req: 32/85] 10.0.119.211 () {52 vars in 1112 bytes} [Fri Jun  1 17:12:26 2018] POST /axf/userregister/ => generated 0 bytes in 289 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 0)
+[pid: 29740|app: 0|req: 14/86] 10.0.119.211 () {46 vars in 915 bytes} [Fri Jun  1 17:12:26 2018] GET /axf/mine/ => generated 5927 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 33/87] 10.0.119.155 () {44 vars in 883 bytes} [Fri Jun  1 17:12:28 2018] GET /axf/checkemail/?u_email=1456819312%40qq.com => generated 35 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29740|app: 0|req: 15/88] 10.0.119.183 () {44 vars in 929 bytes} [Fri Jun  1 17:12:28 2018] GET /axf/checkemail/?u_email=1658335540%40qq.com => generated 35 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 9)
+[pid: 29740|app: 0|req: 16/89] 10.0.119.100 () {44 vars in 927 bytes} [Fri Jun  1 17:12:29 2018] GET /axf/checkemail/?u_email=dongUUUUU%40163.com => generated 48 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 6)
+a7e6c3703d962cacbf967cf2d59323c9
+[pid: 29720|app: 0|req: 34/90] 10.0.119.209 () {52 vars in 1126 bytes} [Fri Jun  1 17:12:32 2018] POST /axf/userregister/ => generated 0 bytes in 222 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 4)
+[pid: 29720|app: 0|req: 35/91] 10.0.119.209 () {46 vars in 927 bytes} [Fri Jun  1 17:12:33 2018] GET /axf/mine/ => generated 5932 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+96e79218965eb72c92a549dd5a330112
+[pid: 29740|app: 0|req: 17/92] 10.0.119.240 () {52 vars in 1099 bytes} [Fri Jun  1 17:12:38 2018] POST /axf/userregister/ => generated 0 bytes in 135 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 2)
+[pid: 29726|app: 0|req: 21/93] 10.0.119.240 () {46 vars in 900 bytes} [Fri Jun  1 17:12:38 2018] GET /axf/mine/ => generated 5936 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+e10adc3949ba59abbe56e057f20f883e
+202cb962ac59075b964b07152d234b70
+[pid: 29726|app: 0|req: 22/94] 10.0.119.183 () {52 vars in 1205 bytes} [Fri Jun  1 17:12:40 2018] POST /axf/userregister/ => generated 0 bytes in 880 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 1)
+[pid: 29726|app: 0|req: 23/95] 10.0.119.183 () {46 vars in 1008 bytes} [Fri Jun  1 17:12:41 2018] GET /axf/mine/ => generated 5925 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 6)
+[pid: 29726|app: 0|req: 24/96] 127.0.0.1 () {44 vars in 942 bytes} [Fri Jun  1 17:12:41 2018] GET /axf/mine/ => generated 5930 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 29740|app: 0|req: 18/97] 10.0.119.155 () {52 vars in 1123 bytes} [Fri Jun  1 17:12:41 2018] POST /axf/userregister/ => generated 0 bytes in 6543 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 11)
+[pid: 29721|app: 0|req: 21/98] 10.0.119.155 () {46 vars in 926 bytes} [Fri Jun  1 17:12:47 2018] GET /axf/mine/ => generated 5918 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+bf29c288385ce57d7bcc7f538fb0715c
+[pid: 29720|app: 0|req: 36/99] 10.0.119.100 () {52 vars in 1163 bytes} [Fri Jun  1 17:12:48 2018] POST /axf/userregister/ => generated 27 bytes in 92 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 37/100] 10.0.119.155 () {44 vars in 887 bytes} [Fri Jun  1 17:12:57 2018] GET /axf/cart/ => generated 3848 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+[pid: 29720|app: 0|req: 38/101] 10.0.119.100 () {44 vars in 927 bytes} [Fri Jun  1 17:12:57 2018] GET /axf/checkemail/?u_email=987177586%40163.com => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29720|app: 0|req: 39/102] 10.0.119.254 () {42 vars in 776 bytes} [Fri Jun  1 17:13:00 2018] GET /axf/mine => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 7)
+[pid: 29720|app: 0|req: 40/103] 10.0.119.254 () {42 vars in 778 bytes} [Fri Jun  1 17:13:00 2018] GET /axf/mine/ => generated 5948 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+[pid: 29721|app: 0|req: 22/104] 10.0.119.254 () {42 vars in 746 bytes} [Fri Jun  1 17:13:00 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29721|app: 0|req: 23/105] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:01 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 55 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 4)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29726|app: 0|req: 25/106] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:02 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 51 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 9)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29721|app: 0|req: 24/107] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:02 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 33 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29740|app: 0|req: 19/108] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:02 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 56 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 8)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29740|app: 0|req: 20/109] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:02 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 28 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 4)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29726|app: 0|req: 26/110] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:03 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 34 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 4)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29721|app: 0|req: 25/111] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:03 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 28 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 3)
+
+['']
+false
+<class 'str'>
+未选中
+[pid: 29720|app: 0|req: 41/112] 10.0.119.155 () {44 vars in 917 bytes} [Fri Jun  1 17:13:03 2018] GET /axf/changecartsstatus/?carts=&select=false => generated 27 bytes in 37 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 9)
+[pid: 29721|app: 0|req: 26/113] 10.0.119.155 () {44 vars in 891 bytes} [Fri Jun  1 17:13:04 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 2)
+[pid: 29721|app: 0|req: 27/114] 10.0.119.155 () {44 vars in 933 bytes} [Fri Jun  1 17:13:04 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 9)
+[pid: 29726|app: 0|req: 27/115] 10.0.119.155 () {44 vars in 910 bytes} [Fri Jun  1 17:13:05 2018] GET /axf/home/ => generated 22316 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 8)
+[pid: 29720|app: 0|req: 42/116] 10.0.119.155 () {44 vars in 887 bytes} [Fri Jun  1 17:13:06 2018] GET /axf/cart/ => generated 3848 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 6)
+[pid: 29721|app: 0|req: 28/117] 10.0.119.155 () {44 vars in 891 bytes} [Fri Jun  1 17:13:07 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 43/118] 10.0.119.155 () {44 vars in 933 bytes} [Fri Jun  1 17:13:07 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+497
+[pid: 29720|app: 0|req: 44/119] 10.0.119.155 () {44 vars in 908 bytes} [Fri Jun  1 17:13:08 2018] GET /axf/addtocart/?goodsid=497 => generated 46 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 4)
+496
+[pid: 29720|app: 0|req: 45/120] 10.0.119.155 () {44 vars in 908 bytes} [Fri Jun  1 17:13:09 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 3)
+495
+[pid: 29720|app: 0|req: 46/121] 10.0.119.155 () {44 vars in 908 bytes} [Fri Jun  1 17:13:10 2018] GET /axf/addtocart/?goodsid=495 => generated 46 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 47/122] 10.0.119.155 () {44 vars in 910 bytes} [Fri Jun  1 17:13:11 2018] GET /axf/cart/ => generated 7230 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 2)
+8361bf52636ae120bb39c82d96fe706f
+8#9#10
+['8', '9', '10']
+false
+<class 'str'>
+未选中
+[pid: 29720|app: 0|req: 49/123] 10.0.119.155 () {44 vars in 937 bytes} [Fri Jun  1 17:13:13 2018] GET /axf/changecartsstatus/?carts=8%239%2310&select=false => generated 53 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 8)
+8#9#10
+['8', '9', '10']
+true
+<class 'str'>
+选中
+[pid: 29720|app: 0|req: 50/124] 10.0.119.155 () {44 vars in 935 bytes} [Fri Jun  1 17:13:14 2018] GET /axf/changecartsstatus/?carts=8%239%2310&select=true => generated 54 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 7)
+['8', '9', '10']
+[pid: 29720|app: 0|req: 51/125] 10.0.119.155 () {44 vars in 895 bytes} [Fri Jun  1 17:13:15 2018] GET /axf/makeorder/?carts=8%239%2310 => generated 45 bytes in 30 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 52/126] 10.0.119.155 () {44 vars in 924 bytes} [Fri Jun  1 17:13:15 2018] GET /axf/orderdetail/?order_id=13 => generated 3160 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 9)
+[pid: 29720|app: 0|req: 52/127] 10.0.119.100 () {52 vars in 1165 bytes} [Fri Jun  1 17:13:12 2018] POST /axf/userregister/ => generated 27 bytes in 4708 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 10)
+[pid: 29720|app: 0|req: 53/128] 10.0.119.155 () {44 vars in 896 bytes} [Fri Jun  1 17:13:20 2018] GET /axf/alipay/?orderid=13 => generated 30 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 6)
+[pid: 29720|app: 0|req: 54/129] 10.0.119.155 () {44 vars in 906 bytes} [Fri Jun  1 17:13:20 2018] GET /axf/mine/ => generated 5919 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 29740|app: 0|req: 21/130] 10.0.119.155 () {44 vars in 914 bytes} [Fri Jun  1 17:13:23 2018] GET /axf/orderlist/?status=0 => generated 917 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 1)
+[pid: 29726|app: 0|req: 28/131] 10.0.119.254 () {44 vars in 859 bytes} [Fri Jun  1 17:13:26 2018] GET /axf/userregister/ => generated 2793 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 2)
+[pid: 29721|app: 0|req: 29/132] 10.0.119.112 () {44 vars in 916 bytes} [Fri Jun  1 17:13:31 2018] GET /axf/orderlist/?status=0 => generated 917 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 10)
+[pid: 29721|app: 0|req: 30/133] 10.0.119.254 () {44 vars in 895 bytes} [Fri Jun  1 17:13:35 2018] GET /axf/checkuser/?u_name=%E9%AB%98%E8%B5%9E%E9%92%A7 => generated 35 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29726|app: 0|req: 29/134] 10.0.119.112 () {44 vars in 889 bytes} [Fri Jun  1 17:13:50 2018] GET /axf/cart/ => generated 3848 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 5)
+[pid: 29721|app: 0|req: 31/135] 10.0.119.112 () {44 vars in 893 bytes} [Fri Jun  1 17:13:52 2018] GET /axf/market/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 32/136] 10.0.119.112 () {44 vars in 935 bytes} [Fri Jun  1 17:13:52 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 4)
+[pid: 29720|app: 0|req: 55/137] 10.0.119.254 () {44 vars in 869 bytes} [Fri Jun  1 17:13:58 2018] GET /axf/checkemail/?u_email=888%40qq.com => generated 35 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+698d51a19d8a121ce581499d7b701668
+[pid: 29720|app: 0|req: 56/138] 10.0.119.254 () {52 vars in 1123 bytes} [Fri Jun  1 17:14:08 2018] POST /axf/userregister/ => generated 0 bytes in 211 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 4)
+[pid: 29720|app: 0|req: 57/139] 10.0.119.254 () {46 vars in 926 bytes} [Fri Jun  1 17:14:08 2018] GET /axf/mine/ => generated 5921 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 3)
+[pid: 29720|app: 0|req: 58/140] 10.0.119.254 () {44 vars in 887 bytes} [Fri Jun  1 17:14:11 2018] GET /axf/home/ => generated 22316 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 59/141] 10.0.119.211 () {42 vars in 833 bytes} [Fri Jun  1 17:14:24 2018] GET /2048/index => generated 84 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29720|app: 0|req: 60/142] 10.0.119.183 () {44 vars in 933 bytes} [Fri Jun  1 17:15:06 2018] GET /axf/cart/ => generated 3848 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 8)
+[pid: 29720|app: 0|req: 61/143] 10.0.119.183 () {44 vars in 969 bytes} [Fri Jun  1 17:15:11 2018] GET /axf/mine/ => generated 5925 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 7)
+[pid: 29721|app: 0|req: 33/144] 10.0.119.112 () {42 vars in 911 bytes} [Fri Jun  1 17:16:02 2018] GET /axf/activeuser/?utoken=33894098-0082-475c-83f2-b45b3993df77 => generated 18 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 1)
+[pid: 29740|app: 0|req: 22/145] 10.0.119.207 () {42 vars in 746 bytes} [Fri Jun  1 17:31:35 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29740|app: 0|req: 23/146] 10.0.119.158 () {42 vars in 770 bytes} [Fri Jun  1 17:43:43 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29720|app: 0|req: 62/147] 10.0.119.158 () {40 vars in 727 bytes} [Fri Jun  1 17:43:44 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 63/148] 10.0.119.155 () {44 vars in 891 bytes} [Fri Jun  1 17:49:35 2018] GET /axf/market/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 9)
+[pid: 29720|app: 0|req: 64/149] 10.0.119.155 () {44 vars in 933 bytes} [Fri Jun  1 17:49:35 2018] GET /axf/marketwithparams/104749/0/0/ => generated 9682 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 10)
+495
+[pid: 29720|app: 0|req: 65/150] 10.0.119.155 () {44 vars in 908 bytes} [Fri Jun  1 17:49:36 2018] GET /axf/addtocart/?goodsid=495 => generated 46 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 6)
+496
+[pid: 29720|app: 0|req: 66/151] 10.0.119.155 () {44 vars in 908 bytes} [Fri Jun  1 17:49:37 2018] GET /axf/addtocart/?goodsid=496 => generated 46 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+497
+[pid: 29740|app: 0|req: 24/152] 10.0.119.155 () {44 vars in 908 bytes} [Fri Jun  1 17:49:38 2018] GET /axf/addtocart/?goodsid=497 => generated 46 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 9)
+[pid: 29740|app: 0|req: 25/153] 10.0.119.155 () {44 vars in 910 bytes} [Fri Jun  1 17:49:39 2018] GET /axf/cart/ => generated 7232 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 6)
+['11', '12', '13']
+[pid: 29720|app: 0|req: 67/154] 10.0.119.155 () {44 vars in 899 bytes} [Fri Jun  1 17:49:42 2018] GET /axf/makeorder/?carts=11%2312%2313 => generated 45 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29720|app: 0|req: 68/155] 10.0.119.155 () {44 vars in 924 bytes} [Fri Jun  1 17:49:42 2018] GET /axf/orderdetail/?order_id=14 => generated 3160 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 4)
+[pid: 29720|app: 0|req: 69/156] 10.0.119.155 () {44 vars in 896 bytes} [Fri Jun  1 17:49:46 2018] GET /axf/alipay/?orderid=14 => generated 30 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29726|app: 0|req: 30/157] 10.0.119.155 () {44 vars in 906 bytes} [Fri Jun  1 17:49:46 2018] GET /axf/mine/ => generated 5919 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 34/158] 10.0.119.155 () {44 vars in 914 bytes} [Fri Jun  1 17:49:53 2018] GET /axf/orderlist/?status=0 => generated 917 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 123 bytes (1 switches on core 3)
+[pid: 29720|app: 0|req: 70/159] 10.0.119.231 () {42 vars in 751 bytes} [Fri Jun  1 17:51:07 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29740|app: 0|req: 26/160] 10.0.119.254 () {42 vars in 796 bytes} [Fri Jun  1 17:51:46 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29726|app: 0|req: 31/161] 10.0.119.183 () {42 vars in 837 bytes} [Fri Jun  1 17:54:49 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 6)
+[pid: 29720|app: 0|req: 71/162] 10.0.119.213 () {40 vars in 671 bytes} [Fri Jun  1 18:01:22 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29726|app: 0|req: 32/163] 10.0.119.213 () {40 vars in 648 bytes} [Fri Jun  1 18:01:22 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29721|app: 0|req: 35/164] 10.0.119.213 () {40 vars in 701 bytes} [Fri Jun  1 18:01:33 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 8)
+[pid: 29721|app: 0|req: 36/165] 10.0.119.213 () {42 vars in 732 bytes} [Fri Jun  1 18:01:36 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29720|app: 0|req: 72/166] 10.0.119.213 () {40 vars in 701 bytes} [Fri Jun  1 18:02:00 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29720|app: 0|req: 73/167] 10.0.119.213 () {40 vars in 663 bytes} [Fri Jun  1 18:02:00 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29721|app: 0|req: 37/168] 10.0.119.187 () {46 vars in 843 bytes} [Fri Jun  1 18:02:22 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29721|app: 0|req: 38/169] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:02:55 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 74/170] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:03:57 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 75/171] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:04:14 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29721|app: 0|req: 39/172] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:05:54 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29740|app: 0|req: 27/173] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:45 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 76/174] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:47 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 6)
+[pid: 29721|app: 0|req: 40/175] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:47 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29726|app: 0|req: 33/176] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:48 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 9)
+[pid: 29720|app: 0|req: 77/177] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:48 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 29720|app: 0|req: 78/178] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:48 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29726|app: 0|req: 34/179] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:49 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 4)
+[pid: 29721|app: 0|req: 41/180] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:07:58 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 6)
+[pid: 29721|app: 0|req: 42/181] 10.0.119.187 () {44 vars in 774 bytes} [Fri Jun  1 18:08:02 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 43/182] 10.0.119.187 () {44 vars in 774 bytes} [Fri Jun  1 18:08:05 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 4)
+[pid: 29726|app: 0|req: 35/183] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:08:06 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 79/184] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:44 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 4)
+[pid: 29726|app: 0|req: 36/185] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:45 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29721|app: 0|req: 44/186] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:52 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29740|app: 0|req: 28/187] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:52 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29720|app: 0|req: 80/188] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:53 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 3)
+[pid: 29726|app: 0|req: 37/189] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:55 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29721|app: 0|req: 45/190] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:56 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 9)
+[pid: 29721|app: 0|req: 46/191] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:57 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 2)
+[pid: 29721|app: 0|req: 47/192] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:57 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 11)
+[pid: 29720|app: 0|req: 81/193] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:58 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29740|app: 0|req: 29/194] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:59 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29720|app: 0|req: 82/195] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:59 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29720|app: 0|req: 83/196] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:10:59 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 9)
+[pid: 29720|app: 0|req: 84/197] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:00 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29720|app: 0|req: 85/198] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:00 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29726|app: 0|req: 38/199] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:00 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 5)
+[pid: 29721|app: 0|req: 48/200] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:00 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 10)
+[pid: 29721|app: 0|req: 49/201] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:01 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29720|app: 0|req: 86/202] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:57 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 6)
+[pid: 29720|app: 0|req: 87/203] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:58 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 4)
+[pid: 29740|app: 0|req: 30/204] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:59 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 7)
+[pid: 29721|app: 0|req: 50/205] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:59 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 6)
+[pid: 29721|app: 0|req: 51/206] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:11:59 2018] GET /2048/index.html => generated 89 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 29721|app: 0|req: 52/207] 10.0.119.187 () {42 vars in 752 bytes} [Fri Jun  1 18:17:20 2018] GET /2048/index.html => generated 89 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 4)
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 17:48:48 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/Python1804/AXFDay
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:12:12 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/Python1804/AXFDay
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:41:55 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/Python1804/AXFDay
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:42:50 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/Python1804/AXFDay
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:47:59 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/Python1804/AXFDay
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:50:10 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/Python1804/AXFDay
+chdir(): No such file or directory [core/uwsgi.c line 2629]
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:53:31 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/python1804/AXFDay
+your processes number limit is 7675
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8010 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1375640
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 938720 bytes (916 KB) for 48 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x1375640 pid: 11787 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11787)
+spawned uWSGI worker 1 (pid: 11789, cores: 12)
+spawned uWSGI worker 2 (pid: 11790, cores: 12)
+spawned uWSGI worker 3 (pid: 11791, cores: 12)
+spawned uWSGI worker 4 (pid: 11797, cores: 12)
+Sat Jun  2 18:58:32 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 18:58:32 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 18:59:24 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/python1804/AXFDay
+your processes number limit is 7675
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8010 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x121c640
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 938720 bytes (916 KB) for 48 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x121c640 pid: 11927 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11927)
+spawned uWSGI worker 1 (pid: 11931, cores: 12)
+spawned uWSGI worker 2 (pid: 11932, cores: 12)
+spawned uWSGI worker 3 (pid: 11933, cores: 12)
+spawned uWSGI worker 4 (pid: 11945, cores: 12)
+Sat Jun  2 19:10:58 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Jun  2 19:10:58 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Sat Jun  2 19:11:25 2018] ***
+compiled with version: 5.4.0 20160609 on 01 June 2018 13:41:23
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: rockrong
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/rock/python1804/AXFDay
+writing pidfile to uwsgi.pid
+detected binary path: /home/rock/.virtualenvs/python1804/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/rock/python1804/AXFDay
+your processes number limit is 7675
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8010 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x245a640
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 938720 bytes (916 KB) for 48 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x245a640 pid: 12385 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12385)
+spawned uWSGI worker 1 (pid: 12389, cores: 12)
+spawned uWSGI worker 2 (pid: 12390, cores: 12)
+spawned uWSGI worker 3 (pid: 12410, cores: 12)
+spawned uWSGI worker 4 (pid: 12414, cores: 12)
+[pid: 12389|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 797 bytes} [Sat Jun  2 19:11:34 2018] GET /axf/home/ => generated 22314 bytes in 3613 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 12389|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 797 bytes} [Sat Jun  2 19:14:53 2018] GET /axf/home/ => generated 22314 bytes in 422 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 2)
