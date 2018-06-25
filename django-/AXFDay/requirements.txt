@@ -1,0 +1,10 @@
+Django==1.11.7
+django-debug-toolbar==1.9.1
+django-redis==4.9.0
+django-tinymce==2.7.0
+Pillow==5.1.0
+PyMySQL==0.8.1
+pytz==2018.4
+redis==2.10.6
+sqlparse==0.2.4
+uWSGI==2.0.17
